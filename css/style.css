@@ -1,0 +1,630 @@
+@font-face {
+    font-family: Netflix-Sans;
+    src: url(NetflixSansRegular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Netflix-Sans;
+}
+
+header {
+    background-image: url(../images/netfiximg.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    height: 97vh;
+    border-bottom: 10px solid #ccc;
+}
+
+.header {
+    background-image:linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.801) 0,
+        rgba(0, 0, 0, 0.401) 40%,
+        rgba(0, 0, 0, 0.401) 75%,
+        rgba(0, 0, 0, 0.801) 100%
+    );
+    height: 97vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    padding-left: 40px;
+}
+
+.logo a {
+    background-color: #E50914;
+    border: 1px solid #E50914;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    margin: 40px;
+    font-size: 20px;
+}
+
+.started {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.started h1,.started h2,.started p {
+    color: #fff;
+}
+
+.started h1 {
+    font-size: 48px;
+    font-weight: 500;
+    width: 40%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.started h2 {
+    font-size: 26px;
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+
+.started p {
+    font-size: 18px;
+    padding-bottom: 16px;
+}
+
+.sign {
+    display: flex;
+}
+
+form input[type="email"] {
+    padding: 10px  140px;
+    font-size: 22px;
+    text-align: start;
+}
+
+form button {
+    font-size: 22px;
+    border: 1px solid #E50914;
+    background-color: #E50914;
+    color: #fff;
+    padding: 10px 14px;
+}
+
+form button:hover {
+    border: 1px solid #ff0000;
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+main, article, aside, summary, figure, #email {
+    background-color: #000;
+    color: #fff;
+}
+
+.enjoy {
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    border-bottom: 10px solid #313131;
+}
+
+#watch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+
+}
+
+#watch h1 {
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#watch p {
+    font-size: 24px;
+    width: 70%;
+}
+
+#tv {
+    width: 45rem;
+    height: 26rem;
+    position: relative;
+}
+
+#tv img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#tv video {
+    position: static;
+    mask-position: initial;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+}
+
+.download {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    border-bottom: 10px solid #313131;
+}
+
+#mobile img {
+    width: 100%;
+}
+
+#save {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#save h1 {
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+    width: 64%;
+}
+
+#save p {
+    font-size: 24px;
+    width: 74%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 10px solid #313131;
+}
+
+aside h1 {
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+aside p {
+    font-size: 24px;
+    width: 38%;
+}
+
+.kids {
+    display: flex;
+    padding-bottom: 50px;
+    border-bottom: 10px solid #313131;
+}
+
+#kidpic img {
+    padding-left: 10%;
+}
+
+#create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 8%;
+    padding-left: 8%; 
+}
+
+#create h1 {
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#create p {
+    font-size: 24px;
+    width: 110%;
+}
+
+.android {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid #313131;
+}
+
+#phone img {
+    width: 70%;
+    align-self: right;
+    padding-left: 10%;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#details h1 {
+    font-weight: 500;
+    font-size: 44px;
+    padding-bottom: 20px;
+    width: 120%;
+}
+
+#details p {
+    font-size: 24px;
+    width: 140%;
+    padding-bottom: 20px;
+}
+
+#details a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+#faq {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+#faq h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+#faq div {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#faq .question, #faq .answer {
+    background-color: #313131;
+    padding: 15px;
+}
+
+#faq .question {
+    border-top: 10px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#faq .question img {
+    width: 24px;
+    height: 24px;
+}
+
+#faq .answer {
+    border-top: 2px solid #000;
+    display: none;
+}
+
+#faq p {
+    font-size: 25px;
+}
+
+#email {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: 10px solid #313131;
+}
+
+#email p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 60px;   
+}
+
+footer {
+    background-color: #000;
+    color: #cccccc7b;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #cccccc7b;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#one {
+    padding-bottom: 10px;
+    padding-left: 9%;
+    text-align: left;
+    font-size: 16px;
+}
+
+#three {
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 9%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.container a {
+    padding: 8px;
+}
+
+#con1, #con2, #con3, #con4 {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:600px) {
+    header {
+        height: 75vh;
+    }
+
+    .header {
+        height: 75vh;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .logo a {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+
+    .started h1 {
+        font-size: 30px;
+        width: 80%;
+        padding-bottom: 0px;
+    }
+
+    .started h2 {
+        font-size: 20px;
+    }
+
+    .started p {
+        font-size: 16px;
+        text-align: center;
+        width: 60%;
+    }
+
+    .sign {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    form input[type="email"] {
+        padding: 10px 96px;
+        font-size: 16px;
+
+    }
+
+    form button {
+        padding: 6px 14px;
+        font-size: 16px;
+        border-radius: 2px;
+    }
+
+    .enjoy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #watch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #watch h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    #watch p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #tv {
+        width: 90%;
+        align-self: center;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 26px;
+    }
+
+    #save {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #save h1 {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        width: 90%;
+    }
+
+    #save p {
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside h1 {
+        font-size: 25px;
+        font-weight: 600;
+        width: 80%;
+        text-align: center;
+    }
+
+    aside p {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .kids {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #kidpic img {
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    #create {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #create h1 {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 26px;
+    }
+
+    #create p {
+        font-size: 18px;
+        text-align: center;
+        width: 110%;
+    }
+
+    .android {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #details h1 {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+
+    #details p, #details a {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #phone img {
+        width: 100%;
+        padding-top: 26px;
+        align-self: center;
+    }
+
+    #faq h1 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    #faq div {
+        width: 100%;
+    }
+    #faq p {
+        font-size: 18px;
+    }
+
+   #email {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+    #email p {
+        font-size: 18px;
+        text-align: center;
+        width: 75%;
+    }
+
+    #email form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #one a {
+        font-size: 16px;
+        padding-bottom: 24px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 9%;
+    }
+
+    #three p {
+        padding-left: 9px
+    }
+
+}
